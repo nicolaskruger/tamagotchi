@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/tamagotchi/static/css/main.02510c16.chunk.css",
+    "main.js": "/tamagotchi/static/js/main.622d5a81.chunk.js",
+    "main.js.map": "/tamagotchi/static/js/main.622d5a81.chunk.js.map",
+    "runtime-main.js": "/tamagotchi/static/js/runtime-main.18b7505e.js",
+    "runtime-main.js.map": "/tamagotchi/static/js/runtime-main.18b7505e.js.map",
+    "static/js/2.58569b12.chunk.js": "/tamagotchi/static/js/2.58569b12.chunk.js",
+    "static/js/2.58569b12.chunk.js.map": "/tamagotchi/static/js/2.58569b12.chunk.js.map",
+    "static/js/3.f3080f9e.chunk.js": "/tamagotchi/static/js/3.f3080f9e.chunk.js",
+    "static/js/3.f3080f9e.chunk.js.map": "/tamagotchi/static/js/3.f3080f9e.chunk.js.map",
+    "index.html": "/tamagotchi/index.html",
+    "static/css/main.02510c16.chunk.css.map": "/tamagotchi/static/css/main.02510c16.chunk.css.map",
+    "static/js/2.58569b12.chunk.js.LICENSE.txt": "/tamagotchi/static/js/2.58569b12.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.18b7505e.js",
+    "static/js/2.58569b12.chunk.js",
+    "static/css/main.02510c16.chunk.css",
+    "static/js/main.622d5a81.chunk.js"
+  ]
+}
