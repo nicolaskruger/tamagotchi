@@ -1,0 +1,15 @@
+.Bar__h1{
+    font-size: 20px;
+    font-weight: 100;
+    margin: 0;
+}
+.Bar__ul{
+    display: flex;
+    justify-content: flex-end;
+}
+.Bar__li{
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    background-color: black;
+}

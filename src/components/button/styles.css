@@ -1,0 +1,19 @@
+:root{
+    --button-size: 50px
+}
+.Button__section{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.Button__button{
+    cursor: pointer;
+    background-color: white;
+    border: black solid 1px;
+    width: var(--button-size);
+    height: var(--button-size);
+    transition: 100ms;
+}
+.Button__button:hover{
+    background-color: rgb(236, 236, 236);
+}
