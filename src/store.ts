@@ -9,7 +9,7 @@ const initialState:Tamagotchi_State = {
     tamagotch: {
         health: 5,
         hungry: 3,
-        sleep: 3
+        sleep: 1
     },
     currState: TamagotchiState.STANDAR
 };

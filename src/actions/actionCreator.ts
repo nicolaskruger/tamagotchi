@@ -75,10 +75,14 @@ export function damage_by_idle(tamagotch:ITamagotchi){
         hungry: 0,
         sleep: 0
     };
-    (Object.keys(tamagotch) as Array<keyof ITamagotchi>)
+    const arr = (Object.keys(tamagotch) as Array<keyof ITamagotchi>);
+    arr
         .forEach(key => {
             tama[key] = limitMin(tamagotch[key]-1)
         })
+    const die = arr.reduce((acc,curr)=>acc||tama[curr]===0,false);
+    if(die)
+        return dead(tama);
     const action: TamagotchiAction = {
         type: actionTypes.DAMAGE_BY_IDLE,
         tamagotch: {

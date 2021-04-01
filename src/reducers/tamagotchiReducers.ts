@@ -6,7 +6,7 @@ const initialState:Tamagotchi_State = {
     tamagotch: {
         health: 5,
         hungry: 3,
-        sleep: 3
+        sleep: 1
     },
     currState: TamagotchiState.STANDAR
 };
@@ -30,10 +30,15 @@ const tamagotchiReducer = (
         case actionTypes.TO_DEF_MODE:
             return {
                 currState: action.currState,
-                tamagotch: {...action.tamagotch}
+                tamagotch: {...state.tamagotch}
             }
         case actionTypes.DAMAGE_BY_IDLE:
         case actionTypes.DIE:
+
+            return {
+                currState: action.currState,
+                tamagotch: {...action.tamagotch}
+            }
         default:
             return state;
     }
