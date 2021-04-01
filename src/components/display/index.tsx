@@ -1,21 +1,25 @@
-import { ITamagotchi } from "../../app/ITamagotchi";
-import { TamagotchiState } from "../../app/TamagotchiState";
 import DisplayImg from "../displayImg";
 import DisplayStatus from "../displayStatus";
 import './styles.css'
+import { connect, ConnectedProps } from "react-redux";
+import mapStateToProps from '../mapStateToProps';
 
-const Display = () => {
-    const tamagotchi:ITamagotchi = {
-        health: 5,
-        hungry: 4,
-        sleep: 2
-    }
+
+
+const connector = connect(mapStateToProps,{});
+
+type PropsDisplay = ConnectedProps<typeof connector>;
+
+const Display = ({tamagotchi,state}:PropsDisplay) => {
+    
     return (
         <section className="Display__section">
             <DisplayStatus tamagotchi={tamagotchi} />
-            <DisplayImg state={TamagotchiState.SLEEPING}/>        
+            <DisplayImg state={state}/>        
         </section>
     )
 }
 
-export default Display;
+
+
+export default connector(Display);

@@ -2,6 +2,8 @@
     font-size: 20px;
     font-weight: 100;
     margin: 0;
+    display: flex;
+    justify-content: flex-end;
 }
 .Bar__ul{
     display: flex;

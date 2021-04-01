@@ -15,7 +15,7 @@ const DisplayImg = ({state}:PropsDisplayImg) =>{
         [TamagotchiState.DEAD]: "Dead",
         [TamagotchiState.EATING]: "Eating",
         [TamagotchiState.SLEEPING]: "Sleeping",
-        [TamagotchiState.STANDAR]: "",
+        [TamagotchiState.STANDAR]: ";3",
         [TamagotchiState.WORK]: "Working"
     }
     const upDots = () =>{
